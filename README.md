@@ -1,9 +1,9 @@
 <p align="center">
   <img src="./clickup-to-pagerduty.webp" alt="ClickUp pointing to PagerDuty">
-</p>.
+</p>
 
 This app runs as a web service so that ClickUp can send webhook events that call the PagerDuty API.  It parses the events based on the `rules.yaml` and `groups.yaml`,
-then alerts to PagerDuty (also based on the rules.griyos set in `rules.yaml`/`groups.yaml`)
+then alerts to PagerDuty (also based on the rules/groups set in `rules.yaml`/`groups.yaml`)
 
 `groups.yaml`
 ```
