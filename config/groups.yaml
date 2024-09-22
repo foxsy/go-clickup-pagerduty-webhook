@@ -1,0 +1,7 @@
+groups:
+  - name: devops
+    escalation_policy_id: P6AXX3C
+  - name: engineering
+    escalation_policy_id: P97HB8K
+  - name: support
+    escalation_policy_id: P65UN9V

@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  clickup-webhook:
+    image: go-clickup-pagerduty-webhook:latest # Build your image first or use 'build' option below
+    build:
+      context: . # Build from the current directory where your Dockerfile is located
+    ports:
+      - "8080:8080" # Expose the service on localhost:8080
+    env_file:
+      - .env # Load environment variables from the .env file
+    volumes:
+      - ./config:/app/config # Mount the config folder if you have YAML or config files

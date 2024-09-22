@@ -1,0 +1,8 @@
+rules:
+  - event: taskUpdated
+    condition:
+      key: priority
+      value: urgent
+    list: "DevOps List" # Filter by the ClickUp list name
+    action: notifyPagerDuty
+    group: devops # Route to the DevOps PagerDuty group/team based on condition and list
